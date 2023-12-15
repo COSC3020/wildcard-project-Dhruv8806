@@ -16,6 +16,16 @@ The $O(n)$ complexity in Bubble Sort comes from the nested loops. The outer loop
 
 The Binary Search implementation has an $\ (O(log (n)))$ worst-case complexity, which efficiently divides the search range in half at each step. When combining Bubble Sort and Binary Search, the overall time complexity of the algorithm is $\ O(n)$ .
 
+
+
+
+The bubble sort implementation has an $O(n)$ worst-case complexity, where $n$ is the number of elements in the array. This arises from the fact that when the array is in reverse order, each element must undergo comparison and potential swapping in every iteration. The nested inner loop traverses the array, requiring $n−1$ passes for the largest element in the worst case to find its sorted position. 
+
+The $O(n)$ complexity in Bubble Sort originates from the nested loops. The outer loop runs $n$ times, and the inner loop, is responsible for comparisons, runs $n−1$ times in the worst case. This nested structure establishes the linear relationship observed in the worst-case scenario.
+
+In the context of comparison-based sorting, where the asymptotically best algorithm achieves $O(n(logn))$ worst-case complexity, our combined Bubble Sort and Binary Search algorithm introduces efficiency through Binary Search's logarithmic time complexity. Binary Search efficiently divides the search range in half at each step, contributing 
+$⁡O(log(n))$ to the overall time complexity. Therefore, the overall time complexity of the algorithm is $O(n(log(n)))$, making the logarithmic efficiency brought by Binary Search in comparison-based sorting scenarios.
+
 ### Overall: 
 
 The implemenated algorithm combines the Bubble Sort with the efficiency of Binary Search for finding elements in a sorted array. While the Bubble Sort may not be as fast for large datasets. As for the binary search improves the efficiency of finding element, making it suitable for scenarios where searching in a sorted array is a common.
